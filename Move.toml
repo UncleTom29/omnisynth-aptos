@@ -1,0 +1,24 @@
+[package]
+name = "omnisynth_v2"
+version = "1.0.0"
+authors = []
+
+[addresses]
+sender = "0x7810503269f5f18dd5607bd640d65679b7700ae1957a22b94bce32eb2408164c"
+owner = "0x7810503269f5f18dd5607bd640d65679b7700ae1957a22b94bce32eb2408164c"
+data_feeds = "0xf1099f135ddddad1c065203431be328a408b0ca452ada70374ce26bd2b32fdd3"
+platform = "0x516e771e1b4a903afe74c27d057c65849ecc1383782f6642d7ff21425f4f9c99"
+omnisynth = "0x7810503269f5f18dd5607bd640d65679b7700ae1957a22b94bce32eb2408164c"
+omnistake = "0x7810503269f5f18dd5607bd640d65679b7700ae1957a22b94bce32eb2408164c"
+omni_lending = "0x7810503269f5f18dd5607bd640d65679b7700ae1957a22b94bce32eb2408164c"
+
+move_stdlib = "0x1"
+aptos_std = "0x1"
+
+[dev-addresses]
+omnisynth = "0x7810503269f5f18dd5607bd640d65679b7700ae1957a22b94bce32eb2408164c"
+
+[dependencies]
+AptosFramework = { git = "https://github.com/aptos-labs/aptos-core.git", subdir = "aptos-move/framework/aptos-framework", rev = "main" }
+MoveStdlib = { git = "https://github.com/aptos-labs/aptos-core.git", subdir = "aptos-move/framework/move-stdlib", rev = "main" }
+ChainlinkDataFeeds = { local = "./ChainlinkDataFeeds" }
